@@ -1,0 +1,31 @@
+validMoves
+    -check if piece is present at location, return null if none
+    -run pieceMoves at location
+    -make fake board and move piece, then run isInCheck
+    -remove move is isInCheck is True
+    -repeat for all moves
+    -return list of moves
+
+makeMove
+    -check if move is valid ERROR = InvalidMoveException
+    -check current turn color ERROR = InvalidMoveException
+    -move to new space
+    -clear old space
+    -Mark en passant opportunity (pawn moves two spaces, clear each turn)
+    -Mark castleing opportunity (generate at start, remove both opportunities if king moves, remove each opporunitiy if rook moves or dies)
+    -switch turn color
+
+isInCheck
+    -import square validation from pieceMoveCalculator
+    -check diagonals for queen, bishop, pawn
+    -check straight for rook, queen
+    -check corners for knight
+    -return
+
+isInCheckmate
+    -no valid moves, in check
+    -game over
+
+isInStaleMate
+    -no valid moves, not in check
+    -game over
