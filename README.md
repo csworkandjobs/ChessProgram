@@ -27,3 +27,5 @@ Note that some testing functions only work if both client and server are run on 
 Project had to be uploaded in chunks due to GitHub limitations on number of files that can be uploaded at once.
 
 Program was developed using the IntelliJ IDE and used Maven for compilation.
+
+Project was developed into its current form between January and April of 2026.
